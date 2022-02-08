@@ -1,0 +1,38 @@
+<div>
+    <app-header></app-header>
+    <div class="col-12">
+        <table datatable [dtOptions]="dtOptions"  class="row-border hover">
+            <thead class='thead-dark table-bordered'>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Date Of Birth</th>
+                    <th scope="col">Date Of Join</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of employeeData;let i = index">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{emp.firstname}}</td>
+                    <td>{{emp.lastname}}</td>
+                    <td>{{emp.gender}}</td>
+                    <td>{{emp.email}}</td>
+                    <td>{{emp.DateOfBirth}}</td>
+                    <td>{{emp.DateOfJoin}}</td>
+                    <td>{{emp.Designation}}</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm" style="margin-right: 10px;"> <i
+                                class="fas fa-pen"></i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,43 @@
+<div>
+
+    <div class="d-flex justify-content-center align-items-center container" style="
+    margin-top: 10%;">
+
+        <div class="register-form w-50">
+
+            <form [formGroup]="loginFrom" (ngSubmit)="onSubmit()">
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type='text' formControlName="email" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['email'].errors}" />
+                    <div *ngIf="submitted && f['email'].errors" class='invalid-feedback'>
+                        <div *ngIf="f['email'].errors['required']">Email Is Required</div>
+                        <div *ngIf="f['email'].errors['email']">Enter a Valid Email</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" formControlName="password" class="form-control"
+                        [ngClass]="{'is-invalid':submitted && f['password'].errors}" />
+                    <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                        <div *ngIf="f['password'].errors['required']">Password is Required</div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+
+                    <button type="submit" class="btn btn-success btn-block">Sign In</button><br>
+                    <p>Dont have Account ? </p>
+
+                    <button type="button" (click)="onSignUp()" routerLink="/signup" class="btn btn-primary btn-block">
+                        Create One
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
