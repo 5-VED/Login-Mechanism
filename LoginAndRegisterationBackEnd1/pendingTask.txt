@@ -1,0 +1,9 @@
+Validation Pending using Joi 
+Logger Pending 
+partial Search Pending
+Authorization (User roles and permissions)
+pre hooks not working
+
+-----------------------------------------------------------
+what is delete me api for  
+what is model in mongoose

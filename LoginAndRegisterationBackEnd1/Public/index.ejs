@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <div>
+        <h1> Welcome <%= firstname %>
+        </h1>
+    </div>
+
+    <table class="table table-sm">
+        <tbody>
+            <tr>
+                <th scope="row">Firstname</th>
+                <td>
+                    <%= firstname %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Lastname</th>
+                <td>
+                    <%= lastname %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Gender</th>
+                <td>
+                    <%= gender %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Email</th>
+                <td>
+                    <%= email %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Password</th>
+                <td>
+                    <%= password %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">ConfirmPassword</th>
+                <td>
+                    <%= confirmPassword %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">DateOfBirth</th>
+                <td>
+                    <%= DateOfBirth %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">DateOfJoin</th>
+                <td>
+                    <%= DateOfJoin %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Designation</th>
+                <td>
+                    <%= Designation %>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+
+<!-- https://stackoverflow.com/questions/41304922/sending-ejs-template-using-nodemailer -->
